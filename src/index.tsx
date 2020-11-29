@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Router } from './Router';
+import { tools } from './tools/tools';
+import { Overview } from './tools/overview/Overview';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router
+      routes={tools as any}
+      fallback={() => <Overview />}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

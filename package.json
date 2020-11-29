@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "@emotion/styled": "^10.0.27",
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@mollycule/react-anime": "^0.0.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -10,15 +16,25 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "color": "^3.1.2",
+    "cxs": "^6.2.0",
+    "file-saver": "^2.0.2",
+    "jszip": "^3.5.0",
+    "pdfassembler": "^0.1.0-beta.8",
     "react": "^16.13.1",
+    "react-beautiful-dnd": "^13.0.0",
+    "react-color": "^2.18.1",
     "react-dom": "^16.13.1",
+    "react-dropzone": "^11.0.3",
+    "react-monaco-editor": "^0.40.0",
     "react-scripts": "3.4.3",
+    "react-spring": "^8.0.27",
     "typescript": "~3.7.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -35,5 +51,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.1",
+    "@types/cxs": "^6.2.1",
+    "@types/file-saver": "^2.0.1",
+    "@types/react-beautiful-dnd": "^13.0.0",
+    "@types/react-color": "^3.0.4",
+    "monaco-editor-webpack-plugin": "^1.9.0",
+    "react-app-rewired": "^2.1.6"
   }
 }
