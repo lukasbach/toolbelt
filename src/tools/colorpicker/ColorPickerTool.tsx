@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ToolContainer } from '../../smoothui/ToolContainer';
-import { TypedSortList } from '../../smoothui/SortList';
 import cxs from 'cxs';
 import { darken, lighten, px } from '../../smoothui/common';
 import { ChromePicker, RGBColor } from 'react-color';

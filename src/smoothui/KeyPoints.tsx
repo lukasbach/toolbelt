@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import cxs from 'cxs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { alpha, darken, px } from './common';
+import { alpha, px } from './common';
 
 export const KeyPoints: React.FC<{
   keyPoints: Array<{ icon: IconProp, title: string, subtitle: string, clickId?: string }>,

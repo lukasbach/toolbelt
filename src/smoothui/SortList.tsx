@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
-import { faCross, faTimes, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { alpha, globals, px, useTheme } from './common';
 import cxs from 'cxs';

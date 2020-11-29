@@ -3,11 +3,10 @@ import { ToolContainer } from '../../smoothui/ToolContainer';
 import MonacoEditor, { MonacoDiffEditor } from 'react-monaco-editor';
 import cxs from 'cxs';
 import { px } from '../../smoothui/common';
-import { BottomContent } from '../../smoothui/BottomContent';
 import { Button } from '../../smoothui/Button';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { AlignedButtons } from '../../smoothui/AlignedButtons';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import * as monacoEditor from 'monaco-editor';
 
 export const TextDiffTool: React.FC<{}> = props => {

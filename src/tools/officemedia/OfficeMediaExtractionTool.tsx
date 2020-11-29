@@ -1,27 +1,17 @@
 import * as React from 'react';
 import { ToolContainer } from '../../smoothui/ToolContainer';
-import { faChevronLeft, faChevronRight, faDownload, faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { ExplicitDropZone } from '../../smoothui/ExplicitDropZone';
 import { useState } from 'react';
-import { TypedSortList } from '../../smoothui/SortList';
-import { AlignedButtons } from '../../smoothui/AlignedButtons';
-import { Button } from '../../smoothui/Button';
-import { PDFAssembler } from "pdfassembler";
-import { CompletedNote } from '../../smoothui/CompletedNote';
-import * as FileSaver from "file-saver";
 import JSZip from 'jszip';
 import cxs from 'cxs';
 import { px } from '../../smoothui/common';
 
-const SortList = TypedSortList<File>();
 
 export const OfficeMediaExtractionTool: React.FC<{}> = props => {
-  const [file, setFile] = useState<File | undefined>();
   const [media, setMedia] = useState<Array<[string, Blob]>>([]);
 
   return (
     <ToolContainer
-      // theme={{ color: '#DE4F3C', backgroundColor: 'white' }}
       theme={{ color: '#7ee634', background: ['rgb(31,53,9)', 'rgb(56,98,20)'] }}
       showHeader={true}
       showTitle={true}
@@ -29,7 +19,7 @@ export const OfficeMediaExtractionTool: React.FC<{}> = props => {
     >
 
       {
-        !file && (
+        !media && (
           <ExplicitDropZone
             accept=".docx,.pptx,.xlsx"
             title={'Drop a MS Office file to start'}
@@ -86,7 +76,7 @@ export const OfficeMediaExtractionTool: React.FC<{}> = props => {
                           transform: 'translateY(-4px)',
                         }
                       })}
-                    />
+                     alt=""/>
                   )
                 }
               </a>

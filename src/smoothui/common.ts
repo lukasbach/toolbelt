@@ -67,7 +67,7 @@ export const useAnimationLifecycle = (display: boolean) => {
     display ? AnimationLifecycleState.Show : AnimationLifecycleState.Initial);
 
   useEffect(() => setState(display ? AnimationLifecycleState.Show : AnimationLifecycleState.Hidden),
-    [display]);
+    [display, AnimationLifecycleState.Show, AnimationLifecycleState.Hidden]);
 
   if (state === AnimationLifecycleState.Show) {
     return 'animate__animated animate__faster animate__fadeInLeft';

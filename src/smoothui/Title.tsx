@@ -1,9 +1,8 @@
 import * as React from 'react';
-import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import cxs from 'cxs';
-import { cls, px, useAnimationLifecycle } from './common';
+import { px } from './common';
 
 const style = {
   container: cxs({

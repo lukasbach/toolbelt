@@ -8,6 +8,7 @@ export const Router: React.FC<{
   }>,
   fallback: () => any,
 }> = props => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [ignored, forceUpdate] = useState(0);
 
   const route = props.routes.find(r => window.location.hash.slice(1) === r.key

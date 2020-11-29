@@ -1,7 +1,7 @@
 import * as React from 'react';
 import cxs from 'cxs';
 import Color from 'color';
-import { faGripHorizontal, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const styles = {
@@ -36,14 +36,14 @@ export const Footer: React.FC<{
       })
     ].join(' ')}>
       <div>
-        Made with <FontAwesomeIcon icon={faHeart} /> by <a href="https://lukasbach.com" target="_blank">Lukas Bach</a>.{' '}
-        Also checkout <a href="https://yana.js.org" target="_blank">Yana</a> and{' '}
-        <a href="https://devsession.js.org" target="_blank">DevSession</a>!
+        Made with <FontAwesomeIcon icon={faHeart} /> by <a rel="noopener noreferrer" href="https://lukasbach.com" target="_blank">Lukas Bach</a>.{' '}
+        Also checkout <a rel="noopener noreferrer" href="https://yana.js.org" target="_blank">Yana</a> and{' '}
+        <a rel="noopener noreferrer" href="https://devsession.js.org" target="_blank">DevSession</a>!
       </div>
       <div>
-        Icons by <a href="https://fontawesome.com/" target="_blank">fontawesome</a>{' '}
-        <a href="https://fontawesome.com/license" target="_blank">(License)</a>.{' '}
-        <a href="https://lukasbach.com/impress">Impress</a>.
+        Icons by <a rel="noopener noreferrer" href="https://fontawesome.com/" target="_blank">fontawesome</a>{' '}
+        <a rel="noopener noreferrer" href="https://fontawesome.com/license" target="_blank">(License)</a>.{' '}
+        <a rel="noopener noreferrer" href="https://lukasbach.com/impress">Impress</a>.
       </div>
     </div>
   );

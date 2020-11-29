@@ -1,8 +1,7 @@
 import * as React from 'react';
 import cxs from 'cxs';
-import { alpha, cls, globals, lighten, px, useTheme } from './common';
-import { DragEventHandler, useCallback, useRef, useState } from 'react';
-import { faGripHorizontal, faUpload } from '@fortawesome/free-solid-svg-icons';
+import { alpha, cls, px, useTheme } from './common';
+import { faUpload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Button } from './Button';
 import { useDropzone } from 'react-dropzone';

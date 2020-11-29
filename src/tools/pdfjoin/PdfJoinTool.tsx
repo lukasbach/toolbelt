@@ -32,6 +32,7 @@ export const PdfJoinTool: React.FC<{}> = props => {
     for (const file of pdfFiles) {
       reader = new FileReader();
       reader.readAsArrayBuffer(file);
+      // eslint-disable-next-line no-loop-func
       await new Promise(resolve => reader.onload = resolve);
       files.push(reader.result);
     }

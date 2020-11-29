@@ -3,10 +3,8 @@ import cxs from 'cxs';
 import { px, Theme, ThemeContext } from './common';
 import { Header } from './Header';
 import Color from 'color';
-import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { Title } from './Title';
 import { Tool, tools } from '../tools/tools';
-import { AnimationLifecycleContainer } from './AnimationLifecycleContainer';
 import { KeyPoints } from './KeyPoints';
 import { Footer } from './Footer';
 

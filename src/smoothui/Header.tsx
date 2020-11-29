@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import cxs from 'cxs';
 import { cls, globals, px, useAdaptiveStyles, useTheme } from './common';
 import Color from 'color';
-import { useState } from 'react';
 import { Tool, tools } from '../tools/tools';
 
 const style = {

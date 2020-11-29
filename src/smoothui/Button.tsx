@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { alpha, cls, globals, px, useAdaptiveStyles, useTheme } from './common';
+import { alpha, globals, px, useTheme } from './common';
 import cxs from 'cxs';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
