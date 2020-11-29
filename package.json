@@ -2,7 +2,7 @@
   "name": "pdfjoin-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://lukasbach.github.io/toolbelt/",
   "dependencies": {
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
