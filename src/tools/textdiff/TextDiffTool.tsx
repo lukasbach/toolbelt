@@ -51,6 +51,7 @@ export const TextDiffTool: React.FC<{}> = props => {
               value={leftCode}
               onChange={setLeftCode}
               editorDidMount={e => monacoLeftEditorRef.current = e}
+              language="text"
             />
             <MonacoEditor
               width={'100%'}
@@ -59,6 +60,7 @@ export const TextDiffTool: React.FC<{}> = props => {
               value={rightCode}
               onChange={setRightCode}
               editorDidMount={e => monacoRightEditorRef.current = e}
+              language="text"
             />
           </div>
         ) : (
@@ -80,6 +82,7 @@ export const TextDiffTool: React.FC<{}> = props => {
             //   editor.layout();
             // }}
             ref={monacoDiffRef}
+            language="text"
           />
         )
       }
